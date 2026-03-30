@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>企业官网</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业官网</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0f172a;color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px}
+.logo{font-weight:600;font-size:20px}
+nav a{margin:0 15px;color:#cbd5f5;text-decoration:none}
+.btn{background:#6366f1;padding:10px 18px;border-radius:8px;border:none;color:#fff;cursor:pointer}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:100px 60px}
+.hero-text{max-width:550px}
+.hero h1{font-size:56px;line-height:1.2;margin-bottom:20px}
+.hero p{color:#94a3b8;margin-bottom:25px}
+.hero img{width:420px;border-radius:16px}
+.services{padding:80px 60px;text-align:center}
+.services h2{font-size:32px;margin-bottom:40px}
+.cards{display:flex;justify-content:center;gap:25px}
+.card{background:#1e293b;padding:30px;border-radius:12px;width:220px;transition:0.3s}
+.card:hover{transform:translateY(-10px);background:#334155}
+footer{text-align:center;padding:30px;color:#94a3b8}
+</style>
 </head>
 <body>
 
-<!-- 导航 -->
 <header>
-    <div class="logo">LOGO</div>
-    <nav>
-        <a href="#">首页</a>
-        <a href="#">关于</a>
-        <a href="#">服务</a>
-        <a href="#">博客</a>
-        <button class="btn">联系</button>
-    </nav>
+<div class="logo">YOUR BRAND</div>
+<nav>
+<a href="#">首页</a>
+<a href="#">关于</a>
+<a href="#">服务</a>
+<a href="#">博客</a>
+<button class="btn">联系</button>
+</nav>
 </header>
 
-<!-- 主视觉 -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>Innovative Solutions<br>for Your Business</h1>
-        <p>帮助企业通过先进技术实现增长</p>
-        <button class="btn">开始使用</button>
-    </div>
-
-    <div class="hero-img">
-        <img src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf" alt="team">
-    </div>
+<div class="hero-text">
+<h1>用创新技术<br>驱动企业增长</h1>
+<p>我们帮助企业通过数字化解决方案，实现效率提升与业务扩展</p>
+<button class="btn">立即开始</button>
+</div>
+<img src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf" alt="team">
 </section>
 
-<!-- 服务 -->
 <section class="services">
-    <h2>我们的服务</h2>
-
-    <div class="cards">
-        <div class="card">商业咨询</div>
-        <div class="card">数字营销</div>
-        <div class="card">技术解决方案</div>
-    </div>
+<h2>我们的服务</h2>
+<div class="cards">
+<div class="card">商业咨询</div>
+<div class="card">数字营销</div>
+<div class="card">技术解决方案</div>
+</div>
 </section>
 
-<script src="script.js"></script>
+<footer>
+© 2026 Your Company. All rights reserved.
+</footer>
+
 </body>
 </html>
